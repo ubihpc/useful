@@ -9,6 +9,12 @@ amplify init --profile <PROFILE_NAME> # profiles can be set in .aws/credentials 
 
 #### Install require packages 
 
+React 
+
+```bash
+npm install aws-amplify @aws-amplify/ui-react
+```
+
 React native 
 
 ```bash
