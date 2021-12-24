@@ -39,3 +39,11 @@ In truffle console
     // Getting the contract symbol
     <variableName>.symbol()
 ```
+
+#### Move to a new address 
+
+Because now we have used Inheritance - not a different Ganache account
+
+```bash
+truffle migrate --reset
+```
