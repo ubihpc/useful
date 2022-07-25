@@ -7,6 +7,7 @@
 * Service: Long-running object with an IP address and a stable fixed port. Services can be attached to pods. It requires a selector e.g. pod label
 * Replica set: Allows to restart pods transparently
 * Deployment: Allows to modify replica sets easily to deploy new docker images with zero downtime
+* Namespaces: Group of pods, services, deployments, etc., organized under some logic, e.g. frontend, backend, etc. There is a default namespace and two belonging to Kubernetes itself - kube-public and kube-system
 
 ## Specs:
 
@@ -154,3 +155,5 @@ However, we should update the YAML file so everthing matches
 ## --to-revision is only necessary when going to other than the last one 
 kubectl rollout undo deploy <DEPLOYMENT_NAME> --to-revision=<REVISION_NUMBER>
 ```
+
+## Namespaces
