@@ -157,3 +157,15 @@ kubectl rollout undo deploy <DEPLOYMENT_NAME> --to-revision=<REVISION_NUMBER>
 ```
 
 ## Namespaces
+
+#### Get all namespaces
+
+```bash
+kubectl get namespaces # or ns
+```
+
+#### Get resources in namespace
+
+```bash
+kubectl get all -n <namespace> # kubectrl get all -n kube-system
+```
