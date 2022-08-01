@@ -66,6 +66,12 @@ kubectl get pods -l <LABEL_KEY>=<LABEL_VALUE>  # filter accordingly to labels
 kubectl apply -f .
 ```
 
+#### Delete all running pods, replicaSets, deployments, etc using yaml files in folder
+
+```bash
+kubectl delete -f .
+```
+
 #### Describe something
 
 ```bash
