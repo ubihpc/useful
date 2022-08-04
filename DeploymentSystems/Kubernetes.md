@@ -8,6 +8,7 @@
 * Replica set: Allows to restart pods transparently
 * Deployment: Allows to modify replica sets easily to deploy new docker images with zero downtime
 * Namespaces: Group of pods, services, deployments, etc., organized under some logic, e.g. frontend, backend, etc. There is a default namespace and two belonging to Kubernetes itself - kube-public and kube-system
+* Logs: Only applies to pods
 
 ## Specs:
 
@@ -77,6 +78,16 @@ kubectl delete -f .
 ```bash
 kubectl describe <pod,po>,<service,svc>,<replicaset,rs> <NAME_OF_THE_THING>
 ```
+
+#### Get Pod logs 
+
+When describe does not give sufficient information
+
+```bash
+kubectl logs <NAME_OF_THE_POD> # does not need the pod/
+kubectl logs -f <NAME_OF_THE_POD> # Freeze the console / Following the log. If it stops it is because the container was restarted
+```
+
 
 ## Pods
 
