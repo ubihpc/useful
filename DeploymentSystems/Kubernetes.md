@@ -186,3 +186,16 @@ kubectl get namespaces # or ns
 ```bash
 kubectl get all -n <namespace> # kubectrl get all -n kube-system
 ```
+
+## Volumes
+
+#### Get persistent volumnes
+
+```bash
+kubectl get pv
+```
+#### Get persistent volumnes claims
+
+```bash
+kubectl get pvc
+```
