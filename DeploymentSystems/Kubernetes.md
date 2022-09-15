@@ -1,4 +1,4 @@
-# Minikube commands
+# Kubernetes commands
 
 ## Concepts
 
@@ -14,7 +14,9 @@
 
 * By default Kubernetes is going to remember the last 2 revisions of a rollout
 
-## General
+## Minikube
+
+This section relates to local kubernetes deployment using Minikube
 
 #### Start Minikube
 
@@ -46,6 +48,12 @@ docker image ls ## Should show minikube docker images e.g. k8s.gcr.io/kube-apise
 ```bash
 minikube ip
 ```
+
+## AWS Elastic Kubernetes Service
+
+This section relates to cloud-hosted deployment using AWS EKS 
+
+## General
 
 #### Show everything defined in a K8S cluster
 
@@ -88,6 +96,11 @@ kubectl logs <NAME_OF_THE_POD> # does not need the pod/
 kubectl logs -f <NAME_OF_THE_POD> # Freeze the console / Following the log. If it stops it is because the container was restarted
 ```
 
+#### Get nodes in cluster
+
+```bash
+kubectl get nodes
+```
 
 ## Pods
 
@@ -126,6 +139,13 @@ kubectl delete pod <POD_NAME> # You may use short word po as well
 ```bash
 kubectl delete pod --all
 ```
+
+#### Get the nodes where pods are running and pods' IPs
+
+```bash
+kubectl get pods/po -o wide
+```
+
 
 ## Services
 
