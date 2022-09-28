@@ -6,14 +6,17 @@
 * **Degree**: The degree of a vertex is the number of edges that are adjacent to it. The neighbors of a vertex v in a graph G is a subset of vertex V′ induced by all vertices adjacent to v.
 * **Neighborhood graph**: The neighborhood graph (also known as an ego graph) of a vertex v in a graph G is a subgraph of G, composed of the vertices adjacent to v and all edges connecting vertices adjacent to v.
 * **Indegree and outdegree**: For a vertex v, the number of head ends adjacent to v is called the **indegree**, indicated by deg-(v) of v, while the number of tail ends adjacent to v is its **outdegree**, indicated by deg+(v) of v.
+* **Adjacency matrix**: The adjacency matrix M of a graph G=(V,E) is a square matrix (|V| × |V|) matrix such that its element is 1 (graph, digraph), X (sum of 1s, one per each edge in a multigraph), weight (weighted graph) when there is an edge from node i to node j, and 0 when there is no edge.
+* **Edge list**: The edge list L of a graph $G=(V,E)$ is a list of size |E| matrix such that its element $L_i$ is a couple representing the tail and the end node of the edge $i$
 
 #### Types of graphs
 
 * **Digraph**: A digraph (directed graph) G is defined as a couple G=(V, E), where V={ v1, .., vn } is a set of nodes and E={(vk , vw ) .., ( vi, vj)} is a set of ordered couples representing the connection between two nodes belonging to V.
 * **Multigraph**: A multigraph G is defined as G=(V, E), where V is a set of nodes and E is a multi-set (a set allowing multiple instances for each of its elements) of edges.
 * **Undirected and Directed multigraph**: A multigraph is called a directed multigraph if E is a multi-set of ordered couples; otherwise, if E is a multi-set of two-sets, then it is called an undirected multigraph.
-**Edge-weighted graph**: An edge-weighted graph (or simply, a weighted graph) G is defined as G=(V, E ,w) where V is a set of nodes, E is a set of edges, and w: E → ℝ is the weighted function that assigns at each edge e ∈ E a weight expressed as a real number.
-**Node-weighted graph**: A node-weighted graph G is defined as G=(V, E ,w) ,where V is a set of nodes, E is a set of edges, and w: V → ℝ is the weighted function that assigns at each node v ∈ V a weight expressed as a real number.
+* **Edge-weighted graph**: An edge-weighted graph (or simply, a weighted graph) G is defined as G=(V, E ,w) where V is a set of nodes, E is a set of edges, and w: E → ℝ is the weighted function that assigns at each edge e ∈ E a weight expressed as a real number.
+* **Node-weighted graph**: A node-weighted graph G is defined as G=(V, E ,w) ,where V is a set of nodes, E is a set of edges, and w: V → ℝ is the weighted function that assigns at each node v ∈ V a weight expressed as a real number.
+* **Kth-partite graphs**: graphs whose vertices can be partitioned in two,three, or more k-th sets of nodes, respectively. Edges are only allowed across different sets and are not allowed within nodes belonging to the same set. In most cases, nodes belonging to different sets are also characterized by particular node types.
 
 Considerations
 
