@@ -45,4 +45,4 @@ A network presents intrinsic properties. Such properties can be measured by part
 * **Diameter**: The diameter of a network is the number of edges contained in the longest shortest path among all possible shortest paths.
 * **Characteristic path length**: The characteristic path length is defined as the average of all the shortest path lengths between all possible pair of nodes. If is the average path length between the node and all the other nodes, the characteristic path length is computed as follows:
 
-$\frac{1}{q(q-1)}\sum_{i∈V} l_i $
+$\frac{1}{q(q-1)}\sum_{i∈V}^n l_i$
